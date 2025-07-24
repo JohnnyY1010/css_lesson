@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基礎排版練習</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            border-bottom: 1px solid black;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .logo img {
+            width: 80px;
+        }
+
+        ul,
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        ul li {
+            list-style-type: none;
+            height: 100%;
+        }
+
+        ul li a {
+            color: black;
+            text-decoration: none;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 20px;
+            display: flex;
+            margin: 15px;
+            height: 100%;
+        }
+
+        a:hover {
+            color: indianred;
+        }
+
+        .News {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 960px;
+            margin: auto;
+        }
+
+        .main-block {
+            width: 100%;
+        }
+
+        H1,
+        h2 {
+            margin: 40px;
+            font-size: 28px;
+        }
+
+        .block-list {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px dotted black;
+            width: 100%;
+            line-height: 40px;
+        }
+
+        .main-list-item {
+            margin: 0 20px;
+            font-size: 20px;
+        }
+
+        .pd-main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .Product-sec {
+            display: flex;
+            flex-direction: column;
+            width: 960px;
+            margin: auto;
+        }
+
+        .pd-list {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .pd1 a,
+        .pd2 a,
+        .pd3 a {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .pd1 a:hover,
+        .pd2 a:hover,
+        .pd3 a:hover {
+            color: #333;
+        }
+
+        .pd-list img {
+            width: 280px;
+            margin: 10px;
+        }
+
+        .pd-list p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .pd1 {
+            background-color: rgb(54, 54, 252);
+        }
+
+        .pd2 {
+            background-color: rgb(222, 120, 30);
+        }
+
+        .pd3 {
+            background-color: rgb(4, 179, 150);
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            margin-top: 100px;
+            font-size: 16px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="imgs/logo.png" alt="LOGO"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">最新消息</a></li>
+                <li><a href="">產品介紹</a></li>
+                <li><a href="">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="News">
+        <div>
+            <H1>最新消息</H1>
+        </div>
+        <div class="main-block">
+            <div class="block-list">
+                <div class="main-list-item">2023-06-23</div>
+                <div class="main-list-item">新品上市，優惠7折</div>
+            </div>
+            <div class="block-list">
+                <div class="main-list-item">2023-05-30</div>
+                <div class="main-list-item">預訂生日蛋糕送好禮</div>
+            </div>
+            <div class="block-list">
+                <div class="main-list-item">2023-05-01</div>
+                <div class="main-list-item">母親節蛋糕特惠中</div>
+            </div>
+        </div>
+    </section>
+    <section class="Product-sec">
+        <div class="pd-main">
+            <h2>產品分類</h2>
+        </div>
+        <div class="pd-list">
+            <div class="pd1">
+                <a href="#">
+                    <div class="pd-img"><img src="imgs/cake-cover.jpg" alt=""></div>
+                    <div>
+                        <p>蛋糕</p>
+                    </div>
+                </a>
+            </div>
+            <div class="pd2">
+                <a href="#">
+                    <div class="pd-img"><img src="imgs/bread.jpg" alt=""></div>
+                    <div>
+                        <p>麵包</p>
+                    </div>
+                </a>
+            </div>
+            <div class="pd3">
+                <a href="#">
+                    <div class="pd-img"><img src="imgs/dessert.jpg" alt=""></div>
+                    <div>
+                        <p>甜點</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p> Copyright © 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

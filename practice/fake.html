@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偽元素練習</title>
+    <style>
+        H1::before {
+            content: "Happy";
+            color: white;
+            width: 200px;
+            height: 100px;
+            background-color: slateblue;
+            display: block;
+        }
+
+        H1::after {
+            content: "";
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            display: block;
+        }
+
+        p::first-letter {
+            font-size: 32px;
+            color: red;
+        }
+
+        P::selection {
+            background-color: rgb(223, 155, 67);
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Birthday</H1>
+    <p>近日美國大型速食連鎖餐廳「Jack in the
+        Box」傳出因最大股東之一意圖影響經營層，啟動「毒丸計畫」以防止敵意收購。該公司表示，這項限制措施僅為短期策略，旨在保護公司並爭取更多時間改善營運。此外，2025年第二季多家連鎖餐飲品牌同樣面臨來客數下滑，顯示餐飲市場競爭加劇，消費者支出趨於保守。
+    </p>
+</body>
+
+</html>
