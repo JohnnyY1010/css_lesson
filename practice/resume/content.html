@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>03_游宗霖_作業_大阪城</title>
     <style>
         * {
             margin: 0;
@@ -56,9 +56,9 @@
         }
 
         .logo {
-            width: 180px;
+            width: 160px;
             background-color: rgb(23, 22, 84);
-            padding: 10px;
+            padding: 8px;
 
             display: flex;
             justify-content: space-around;
@@ -69,28 +69,26 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-left: 1rem;
         }
 
         .logo .main {
-            font-family: 'Mukta', sans-serif;
+            font-family: sans-serif;
             font-size: 32px;
             padding: 0;
             margin: 0;
-            line-height: 70%;
-            font-weight: bold;
+            line-height: 90%;
             color: white;
             text-align: center;
         }
 
         .logo .sub {
-            font-family: 'Mukta', sans-serif;
-            font-size: 8px;
+            font-family: sans-serif;
+            font-size: 16px;
             padding: 0;
             margin: 0;
-            font-weight: bold;
             color: white;
             text-align: center;
-            letter-spacing: 8px;
         }
 
 
@@ -127,41 +125,6 @@
             color: white;
         }
 
-        /* 手機 */
-        @media screen and (max-width: 500px) {
-            .header {
-                flex-wrap: wrap;
-                padding: 0;
-
-            }
-
-            .menu-icon {
-                display: block;
-            }
-
-            .navbar,
-            .menu-item,
-            .menu-item li,
-            .menu-item li a {
-                width: 100%;
-            }
-
-            .menu-item {
-                flex-direction: column;
-            }
-        }
-
-        /* header {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .nav ul {
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-        } */
-
         #About,
         #Skills,
         #Photo {
@@ -179,93 +142,108 @@
         }
 
         .my_photo {
-            width: 48%;
-            background-color: aqua;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 500px;
+            width: 40%;
+        }
+
+        .my_photo img {
+            width: 100%;
+            object-fit: contain;
         }
 
         .description {
             width: 48%;
-            background-color: aquamarine;
+            font-size: 24px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 500px;
+            /* height: 500px; */
         }
 
         #Skills {
-            /* background-color: antiquewhite; */
             display: flex;
             justify-content: space-between;
+            /* margin: 32px; */
+            list-style: none;
         }
 
-        .exp-section {
+        #Skills ul li {
+            list-style: none;
+        }
+
+        #Skills h2 {
+            font-size: 2rem;
+        }
+
+        #Skills p {
+            font-size: 1.2rem;
+        }
+
+        .info-section {
             background: lightgray;
             padding: 3% 0;
             width: 100%;
         }
 
-        .exp-container {
+        .info-container {
             width: 80%;
             margin: 0 auto;
         }
 
-        .exp-title {
+        .info-title {
             font-weight: bold;
             margin-bottom: 1em;
+            font-size: 2rem;
         }
 
-        .exp-list {
+        .info-list {
             list-style: none;
             margin: 0;
             padding: 0;
         }
 
-        .exp-item {
+        .info-item {
             display: flex;
             align-items: center;
             padding: 2% 0;
             border-bottom: 1px solid rgb(170, 170, 170);
         }
 
-        .exp-img {
-            width: 8%;
-            height: 50px;
-            background: white;
-            border: 1px dashed rgb(187, 187, 187);
+        .info-img {
+            /* width: 10%; */
+            /* background: white; */
+            /* border: 1px dashed rgb(187, 187, 187); */
             margin-right: 3%;
         }
 
-        .exp-details {
+        .info-details {
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            gap: 5%;
             width: 85%;
         }
 
-        .exp-time {
-            font-size: 13px;
-            color: rgb(136, 136, 136);
+        .info-main {
+            font-size: 24px;
+            color: rgb(70, 70, 70);
+            width: 40%;
         }
 
-        .exp-company {
-            font-weight: bold;
+        .info-sub {
+            font-size: 1.2rem;
+            color: rgb(3, 3, 3);
         }
 
-        .exp-job {
-            font-size: 14px;
-            color: rgb(85, 85, 85);
+        .info-sub1 {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
         }
 
         .container li {
-            height: 300px;
-            display: flex;
             justify-content: center;
             align-items: center;
             width: 31%;
-            background-color: blueviolet;
+            margin-left: auto;
         }
 
         .photo-list {
@@ -279,13 +257,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: cadetblue;
-            height: 100px;
             margin-bottom: 15px;
         }
 
-        .photo-list li:nth-child(2n) {
-            background-color: burlywood;
+        .photo-list li img {
+            width: 100%;
+            object-fit: contain;
         }
 
         .contact-section {
@@ -356,6 +333,27 @@
 
         @media screen and (max-width: 500px) {
 
+            .header {
+                flex-wrap: wrap;
+                padding: 0;
+
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .navbar,
+            .menu-item,
+            .menu-item li,
+            .menu-item li a {
+                width: 100%;
+            }
+
+            .menu-item {
+                flex-direction: column;
+            }
+
             .description,
             .my_photo,
             .container li {
@@ -399,17 +397,17 @@
 </body>
 <header class="header">
     <div class="logo">
-        <img src="../imgs/VIESHOW_LOGO.svg" alt="" width="30px" height="30px">
+        <img src="../HW/imgs/Torii.png" alt="" width="60px" height="60px">
         <div class="logo-text">
-            <p class="main">VIESHOW</p>
-            <p class="sub">CINEMAS</p>
+            <p class="main">Osaka</p>
+            <p class="sub">Castle</p>
         </div>
     </div>
     <div class="menu-icon"></div>
     <nav class="navbar">
         <ul class="menu-item">
             <li><a href="">About</a></li>
-            <li><a href="">Experience</a></li>
+            <li><a href="">infoerience</a></li>
             <li><a href="">Portfolio</a></li>
             <li><a href="">Contact</a></li>
         </ul>
@@ -418,51 +416,71 @@
 <div class="Banner"></div>
 <section id="About">
     <div class="container">
-        <div class="my_photo">photo</div>
-        <div class="description">description</div>
+        <div class="my_photo"><img src="../HW/imgs/gaikan_003-2-1.webp" alt=""></div>
+        <div class="description">大阪城，別名「金城」或「錦城」。位於日本大阪市中央區（古屬攝津國東成郡）的大阪城公園內，和名古屋城、姬路城並列日本三名城。
+
+            在天下統一的桃山時代是豐臣秀吉的居城、豐臣政權的中心。後來德川家康以兩次大坂之役（冬之陣、夏之陣）消滅豐臣家。此後，江戶幕府以大坂城為控制西日本大名的重要據點。
+
+            城郭含城下町等周長約7.8公里，與江戶城初期（內郭）相當（江戶後期含城下町外郭周長約15.8公里）。在豐臣時代，大坂城曾經是全日本規模最大的城郭。</div>
     </div>
 </section>
 <section id="Skills">
     <ul class="container">
-        <li>skill1</li>
-        <li>skill2</li>
-        <li>skill3</li>
+        <li>
+            <h2>豐臣時代</h2>
+            <p>1583年，豐臣秀吉在石山本願寺的原根據地上建造大坂城，以一年半左右的時間完成了本丸（主郭）。直到秀吉病逝前，仍持續不斷地建設二之丸及三之丸等附郭，以及多重水堀（護城河）和運河等防禦設施。大坂城天守外觀四層或五層，瓦上覆以金箔，極其奢華，位置在今日大阪公園蓄水池附近，含石垣四十公尺高，德川時代之新天守則約為58公尺。秀吉於大坂城內設有一間活動式的「黃金茶室」，茶室的牆壁、天花板、地板甚至連門的骨架皆由黃金打造。
+            </p>
+        </li>
+        <li>
+            <h2>江戶時代</h2>
+            <p>1603年（慶長八年），江戶幕府成立後，豐臣秀賴依然居住在大坂城支配攝津國。1614年（慶長十九年），德川家和豐臣家矛盾激烈化，德川家康率大軍包圍大坂城，史稱大坂冬之陣。戰役中，雙方講和，德川家提出條件要求拆毀二之丸與三之丸、填平外圍的水堀，使大坂城成為一座僅有內堀和本丸的裸城。豐臣家雖然一時接受了這個屈辱的條件，但後來毀約重新開挖水堀，讓德川家康得到藉口於次年發動大坂夏之陣，消滅豐臣家，而大坂城也在此役中化為灰燼。
+            </p>
+        </li>
+        <li>
+            <h2>近代</h2>
+            <p>1928年（昭和三年），大阪市市長關一提議重建大阪城，並在半年內募得市民捐款150萬元。<br>
+                1930年（昭和五年），天守動工，以鋼筋水泥復築，隔年完成。這座復興的天守並未忠實複製豐臣或德川時代，基本上以德川時代的白漆風格為主，最上面一層則重現豐臣時代的黑漆描金風格。<br>
+                第二次世界大戰期間，大阪城四周受到美軍猛烈空襲，雖然復興天守此次僥倖無事，但先前逃過戰禍的週邊建築，包含大阪砲兵工廠均劫數難逃。日本敗戰後，大阪城為美軍所接收。1948年時，美軍不慎引發大火，失去紀州御殿。1950年代開始正式的復修及學術調查。1959年，發現豐臣時代的遺跡。大阪城現今為大阪城公園。1997年日本政府指定為登錄有形文化財。
+            </p>
+        </li>
     </ul>
 </section>
-<div class="exp-section" id="exp">
-    <div class="exp-container">
-        <div class="exp-title">Experience</div>
-        <ul class="exp-list">
-            <li class="exp-item">
-                <div class="exp-img"></div>
-                <div class="exp-details">
-                    <span class="exp-time">2019~目前</span>
-                    <span class="exp-company">Company Name</span>
-                    <span class="exp-job">Job title</span>
+<div class="info-section" id="info">
+    <div class="info-container">
+        <div class="info-title">相關資訊</div>
+        <ul class="info-list">
+            <li class="info-item">
+                <div class="info-img"></div>
+                <div class="info-details">
+                    <span class="info-main">修復者</span>
+                    <span class="info-sub">豐臣秀吉 → 豐臣秀賴 → 德川秀忠</span>
                 </div>
             </li>
-            <li class="exp-item">
-                <div class="exp-img"></div>
-                <div class="exp-details">
-                    <span class="exp-time">2016~2019</span>
-                    <span class="exp-company">Company Name</span>
-                    <span class="exp-job">Job title</span>
+            <li class="info-item">
+                <div class="info-img"></div>
+                <div class="info-details">
+                    <span class="info-main">主要城主</span>
+                    <span class="info-sub">豐臣氏、奧平氏、德川氏</span>
                 </div>
             </li>
-            <li class="exp-item">
-                <div class="exp-img"></div>
-                <div class="exp-details">
-                    <span class="exp-time">2014~2016</span>
-                    <span class="exp-company">Company Name</span>
-                    <span class="exp-job">Job title</span>
+            <li class="info-item">
+                <div class="info-img"></div>
+                <div class="info-details">
+                    <span class="info-main">建築風格</span>
+                    <span class="info-sub1">
+                        <span>城郭構造：輪郭式平城</span>
+                        <span>天守構造：獨立式望樓型五重八階</span>
+                    </span>
                 </div>
             </li>
-            <li class="exp-item">
-                <div class="exp-img"></div>
-                <div class="exp-details">
-                    <span class="exp-time">2012~2014</span>
-                    <span class="exp-company">Company Name</span>
-                    <span class="exp-job">Job title</span>
+            <li class="info-item">
+                <div class="info-img"></div>
+                <div class="info-details">
+                    <span class="info-main">日語原文、假名</span>
+                    <span class="info-sub1">
+                        <span>大阪城、大坂城</span>
+                        <span>おおさかじょう、おおざかじょう</span>
+                    </span>
                 </div>
             </li>
         </ul>
@@ -470,18 +488,18 @@
 </div>
 <section id="Photo">
     <ul class="photo-list">
-        <li>圖片</li>
-        <li>文字</li>
-        <li>圖片</li>
-        <li>文字</li>
-        <li>圖片</li>
-        <li>文字</li>
+        <li><img src="../HW/imgs/下載.jpg" alt=""></li>
+        <li><img src="../HW/imgs/下載 (1).jpg" alt=""></li>
+        <li><img src="../HW/imgs/下載 (2).jpg" alt=""></li>
+        <li><img src="../HW/imgs/images.jpg" alt=""></li>
+        <li><img src="../HW/imgs/images (1).jpg" alt=""></li>
+        <li><img src="../HW/imgs/images (2).jpg" alt=""></li>
     </ul>
 </section>
 <div class="contact-section" id="contact">
     <div class="contact-container">
         <div class="contact-title">Contact Me</div>
-        <div class="contact-text">如有作品設計需求，歡迎留言聯絡</div>
+        <div class="contact-text">歡迎留言聯絡</div>
         <form class="contact-form">
             <label for="name">姓名</label>
             <input type="text" id="name" name="name" required>
